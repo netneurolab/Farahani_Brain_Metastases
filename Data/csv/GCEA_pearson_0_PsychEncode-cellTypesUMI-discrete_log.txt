@@ -1,0 +1,68 @@
+(Re-)downloading available ABAnnotate datasets to: /Users/asaborzabadifarahani/Desktop/ALS/ABAnnotate-main/dataset_sources.csv
+
+┌--------------------------------------------------------------------------------------┐
+┝ 24-Dec-2024 11:26:40 Starting ABAnnotate: pearson_0_PsychEncode-cellTypesUMI-discrete┤
+└--------------------------------------------------------------------------------------┘
+
+Using custom provided atlas: /Users/asaborzabadifarahani/Desktop/ALS/ABAnnotate-main/temp/Schaefer2018_400Parcels_7Networks_order_FSLMNI152_1mm.nii - 400 parcels.
+Phenotype data array provided, overriding opt.phenotype with "data".
+Using provided null maps.
+GCEA dataset: PsychEncode-cellTypesUMI-discrete
+
+┌-------------------------------------------------------------------------┐
+┝ 24-Dec-2024 11:26:42 Running GCEA                                       ┤
+└-------------------------------------------------------------------------┘
+
+GCEA settings: 
+- Using phenotype data from: data 
+- Using atlas with 400 regions: /Users/asaborzabadifarahani/Desktop/ALS/ABAnnotate-main/temp/Schaefer2018_400Parcels_7Networks_order_FSLMNI152_1mm.nii 
+- Using 50000 phenotype null maps: /Users/asaborzabadifarahani/Desktop/ASL_gene/FINAL/spins.mat 
+- Using dataset: /Users/asaborzabadifarahani/Desktop/ALS/ABAnnotate-main/datasets/PsychEncode-cellTypesUMI-discrete.mat 
+- Including categories with between 0 and 1000 genes 
+- Removing annotated genes that co-occur in >= 100 percent of categories 
+- Using binarized gene-category-phenotype-associations 
+- Estimating 50000 category null samples 
+- Calculating gene scores based on Pearson correlations 
+- Aggregating gene scores per category by weightedmean 
+- Calculating p-values from right tail at BH-corrected p < 0.0500 
+
+
+Generating category null samples...
+Loaded 25 annotated categories from /Users/asaborzabadifarahani/Desktop/ALS/ABAnnotate-main/datasets/PsychEncode-cellTypesUMI-discrete.mat.
+Transposed 0 category annotation vectors from row to column vector.
+Using all categories in dataset.
+Matching annotated genes to 8687 ABA-genes.
+3981/5373 annotated genes are in gene expression dataset.
+0 categories have no annotated genes matching our 8687 genes.
+Using binarized category-gene-annotations.
+Removed 0 genes annotated in >= 100 percent of categories.
+Categories have between 37 and 268 annotated genes.
+Filtered to 25 categories with between 0 and 1000 annotated genes.
+Computing category scores for 50000 generated 400-region null-phenotype-maps.
+(Spatial null maps loaded from /Users/asaborzabadifarahani/Desktop/ASL_gene/FINAL/spins.mat)
+1272 of 3981 annotated genes are unique.
+Check again: We should have data for all 1272 of 1272 unique annotated genes.
+Computing category null distributions corresponding to 50000 null phenotypes for all 1272 genes annotated to categories.
+Progress (this might take some time...):
+....................................................................................................
+.................................................................................................
+Saving nulls from 50000 iterations to "/Users/asaborzabadifarahani/Desktop/ALS/ABAnnotate-main/nulls/categonulls_PsychEncode-cellTypesUMI-discrete_pearson_0_PsychEncode-cellTypesUMI-discrete.mat"
+Loaded 25 annotated categories from /Users/asaborzabadifarahani/Desktop/ALS/ABAnnotate-main/datasets/PsychEncode-cellTypesUMI-discrete.mat.
+Transposed 0 category annotation vectors from row to column vector.
+Using all categories in dataset.
+Matching annotated genes to 8687 ABA-genes.
+3981/5373 annotated genes are in gene expression dataset.
+0 categories have no annotated genes matching our 8687 genes.
+Using binarized category-gene-annotations.
+Removed 0 genes annotated in >= 100 percent of categories.
+Categories have between 37 and 268 annotated genes.
+Filtered to 25 categories with between 0 and 1000 annotated genes.
+Computing category scores for the spatial phenotype provided.
+1272 of 3981 annotated genes are unique.
+Check again: We should have data for all 1272 of 1272 unique annotated genes.
+Computing category null distributions corresponding to 1 null phenotypes for all 1272 genes annotated to categories.
+Progress (this might take some time...):
+....................................................................................................
+.................................................................................................
+8 significant categories at p < 0.050 derived from gaussian distributions.
+7 significant categories at p < 0.050 derived from null distributions.
